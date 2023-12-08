@@ -102,9 +102,9 @@ console.log("-----------end-----------");
 
 // 7. Написати функцію яка розбиває масив на підмасиви  за заданим розміром. Приклад ([1, 2, 3, 4, 5], 2) => [[1, 2], [3, 4], [5]]
 
-const chunk = (arr, size) =>
+const divArray = (arr, size) =>
   Array.from({ length: Math.ceil(arr.length / size) }, (v, i) =>
     arr.slice(i * size, i * size + size)
   );
 
-console.log(chunk([1, 2, 3, 4, 5, 6], 3));
+console.log(divArray([1, 2, 3, 4, 5, 6], 3));
